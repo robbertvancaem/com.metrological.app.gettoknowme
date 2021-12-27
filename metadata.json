@@ -1,0 +1,6 @@
+{
+  "name": "Get To Know Me",
+  "identifier": "com.metrological.app.gettoknowme",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
