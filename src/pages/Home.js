@@ -1,7 +1,7 @@
-import { Lightning, Utils, Colors } from '@lightningjs/sdk'
+import { Lightning, Utils, Colors, Log } from '@lightningjs/sdk'
 
 import { WIDTH, HEIGHT } from '@/constants'
-
+import { Slider as SliderComp } from '@/components'
 class Home extends Lightning.Component {
   static _template() {
     return {
@@ -11,26 +11,32 @@ class Home extends Lightning.Component {
         rect: true,
         color: Colors('background').get(),
       },
-      Avatar: {
-        w: 250,
-        h: 250,
-        mount: 0.5,
-        x: WIDTH / 2,
-        y: HEIGHT / 2,
-        src: Utils.asset('images/linkedin.jpeg'),
-      },
       Title: {
-        y: HEIGHT / 2 - 125,
-        mountY: 1,
-        w: WIDTH,
+        y: 24 + 96 / 2,
+        x: 60,
         text: {
-          textColor: Colors('text').get(),
-          fontSize: 36,
-          text: 'Get To Know Me',
-          textAlign: 'center',
+          color: Colors('text').get(),
+          text: 'Robbert van Caem',
+          fontSize: 24,
         },
       },
+      Avatar: {
+        w: 96,
+        h: 96,
+        mountX: 1,
+        x: WIDTH - 24,
+        y: 24,
+        src: Utils.asset('images/linkedin.jpeg'),
+      },
+      Slider: {
+        w: WIDTH,
+        type: SliderComp,
+      },
     }
+  }
+
+  _getFocused() {
+    return this.tag('Slider')
   }
 }
 

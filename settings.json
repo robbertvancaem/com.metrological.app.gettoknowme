@@ -5,8 +5,7 @@
       "useImageWorker": true,
       "w": 600,
       "h": 600
-    },
-    "debug": true
+    }
   },
   "platformSettings": {
     "path": "./static",

@@ -24,8 +24,10 @@ import routes from './routes'
 export default class App extends Router.App {
   static colors() {
     return {
-      background: '#262626',
-      text: '#cecece',
+      background: '#0d0d0d',
+      buttonColor: '#ffdede',
+      buttonText: '#0d0d0d',
+      text: '#ffdede',
     }
   }
 
