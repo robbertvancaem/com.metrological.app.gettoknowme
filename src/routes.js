@@ -1,4 +1,4 @@
-import { About, Home } from './pages'
+import { Home } from './pages'
 
 export default {
   root: 'home',
@@ -6,10 +6,6 @@ export default {
     {
       path: 'home',
       component: Home,
-    },
-    {
-      path: 'about',
-      component: About,
     },
   ],
 }

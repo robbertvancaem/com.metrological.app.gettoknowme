@@ -36,12 +36,4 @@ export default class App extends Router.App {
   _setup() {
     Router.startRouter(routes)
   }
-
-  _handleLeft() {
-    Router.navigate('home')
-  }
-
-  _handleRight() {
-    Router.navigate('about')
-  }
 }
