@@ -24,15 +24,13 @@ import routes from './routes'
 export default class App extends Router.App {
   static colors() {
     return {
-      background: '#0d0d0d',
-      buttonColor: '#ffdede',
-      buttonText: '#0d0d0d',
-      text: '#ffdede',
+      darkGrey: '#0d0d0d',
+      lightPink: '#ffdede',
     }
   }
 
   static getFonts() {
-    return [{ family: 'Regular', url: Utils.asset('fonts/Roboto-Regular.ttf') }]
+    return [{ family: 'Fellix', url: Utils.asset('fonts/Fellix-Regular.woff') }]
   }
 
   _setup() {

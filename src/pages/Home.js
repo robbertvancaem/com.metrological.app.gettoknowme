@@ -2,20 +2,20 @@ import { Lightning, Utils, Colors, Log } from '@lightningjs/sdk'
 
 import { WIDTH, HEIGHT } from '@/constants'
 import { Slider as SliderComp } from '@/components'
-class Home extends Lightning.Component {
+export default class Home extends Lightning.Component {
   static _template() {
     return {
       Background: {
         w: WIDTH,
         h: HEIGHT,
         rect: true,
-        color: Colors('background').get(),
+        color: Colors('darkGrey').get(),
       },
       Title: {
         y: 24 + 96 / 2,
         x: 60,
         text: {
-          color: Colors('text').get(),
+          color: Colors('lightPink').get(),
           text: 'Robbert van Caem',
           fontSize: 24,
         },
@@ -39,5 +39,3 @@ class Home extends Lightning.Component {
     return this.tag('Slider')
   }
 }
-
-export default Home

@@ -31,13 +31,13 @@ class Item extends Lightning.Component {
     return {
       flexItem: {
         marginRight: 72,
-        color: Colors('text').get(),
+        color: Colors('lightPink').get(),
       },
       Background: {
         rect: true,
         w: 60,
         h: 32,
-        color: Colors('buttonColor').get(),
+        color: Colors('lightPink').get(),
       },
       Label: {
         w: 60,
@@ -48,7 +48,7 @@ class Item extends Lightning.Component {
           lineHeight: 28,
           verticalAlign: 'middle',
           textAlign: 'center',
-          textColor: Colors('buttonText').get(),
+          textColor: Colors('darkGrey').get(),
         },
       },
       Image: {

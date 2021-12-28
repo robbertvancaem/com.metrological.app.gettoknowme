@@ -1,8 +1,12 @@
-import { Home } from './pages'
+import { Home, Splash } from './pages'
 
 export default {
-  root: 'home',
+  root: 'splash',
   routes: [
+    {
+      path: 'splash',
+      component: Splash,
+    },
     {
       path: 'home',
       component: Home,
